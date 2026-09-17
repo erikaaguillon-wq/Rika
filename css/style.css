@@ -1,0 +1,25 @@
+body {
+    font-family: Georgia;
+    background-color: #fcd8f0;
+    text-align: center;
+}
+
+.intro {
+    padding: 60px 20px;
+}
+
+.intro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 30%;
+}
+
+.intro h1 {
+    margin-top: 10px;
+}
+
+.intro p {
+    max-width: 500x;
+    line-height: 2;
+}
+
