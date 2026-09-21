@@ -3,19 +3,13 @@
 body {
     font-family: Georgia;
     text-align: center;
-    margin: 0;
     background-color: #0a0a0a;
     color: #f5f5f0;
-}
-
-body.about-page {
-    background-color: #0a0a0a;
 }
 
 .intro {
     padding: 60px 20px;
 }
-
 .intro img {
     width: 200px;
     height: 200px;
@@ -29,7 +23,6 @@ body.about-page {
     color: #d4af37;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: 2em;
 }
 
 .intro a {
@@ -38,14 +31,13 @@ body.about-page {
 }
 
 .intro p {
-    max-width: 400px;
+    width: 400px;
     margin: 30px auto;
     line-height: 1.9;
     padding: 30px;
     border-radius: 10px;
     color: #f5f5f0;
     border: 1px solid #d4af37;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .button {
@@ -56,16 +48,13 @@ body.about-page {
     font-weight: bold;
     border-radius: 10px;
     border: 1px solid #d4af37;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 
 /* About Me Section */
-#about {
-    padding: 40px;
-}
 
 #about h2{
+     margin-top: 50px;
     font-family: Georgia;
     font-size: 35px;
     color: #d4af37;
@@ -77,7 +66,7 @@ body.about-page {
 }
 
 #about p {
-    max-width: 400px;
+    width: 400px;
     margin: 30px auto;
     line-height: 1.9;
     padding: 20px;
@@ -93,10 +82,6 @@ body.about-page {
     text-align: left;
     list-style: none;
     color: #f5f5f0;
-}
-
-#about a {
-    text-decoration: none;
 }
 
 /* Skills Section */
@@ -118,13 +103,13 @@ body.about-page {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     gap:  50px;
-    max-width: 1000px;
+    width: 1000px;
     margin: auto;
     justify-items: center;
 }
 
 .skill-card {
-    background-color: #0a0a0a;
+    margin-top: 0;
     width: 200px;
     padding: 40px;
     border-radius: 10px;
@@ -132,11 +117,5 @@ body.about-page {
 }
 
 .skill-card h3 {
-    margin-top: 0;
-    color: #d4af37;
-}
-
-.skill-card p {
-    line-height: 1.5;
-    color: #f5f5f0;
+    margin-top: 5px;
 }
