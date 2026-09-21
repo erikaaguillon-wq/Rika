@@ -84,7 +84,6 @@ body.about-page {
     color: #f5f5f0;
     border-radius: 10px;
     border: 1px solid #d4af37;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 #about ul {
@@ -115,19 +114,21 @@ body.about-page {
 }
 
 .skills-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap:  50px;
+    max-width: 1000px;
+    margin: auto;
+    justify-items: center;
 }
 
 .skill-card {
     background-color: #0a0a0a;
     width: 200px;
-    padding: 20px;
-    border-radius: 4px;
+    padding: 40px;
+    border-radius: 10px;
     border: 1px solid #d4af37;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .skill-card h3 {
