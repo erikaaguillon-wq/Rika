@@ -1,7 +1,6 @@
 /* HOME SECTION*/
-
-html {
-    scroll-behavior: smooth;
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -307,7 +306,7 @@ body {
 .navbar {
     display: flex;
     justify-content: right;
-    align-items: center;
+    align-items: right;
     gap: 25px;
     flex-wrap: wrap;
     text-transform: uppercase;
@@ -424,3 +423,138 @@ body {
     color: #d4af37;
     transform: translateY(-2px);
 }
+
+
+
+/* ACTIVITY 8: RESPONSIVE DESIGN */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Cards: Flexbox wrapping */
+.projects-container,
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.project-card,
+.skill-card {
+    width: 100%;
+    max-width: 350px;
+}
+
+/* Education table */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table-container table {
+    width: 100%;
+    min-width: 550px;
+    border-collapse: collapse;
+}
+
+/* Contact form */
+.contact-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+  .navbar {
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 10px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 8px 6px;
+    }
+
+    .projects-container,
+    .skills-container {
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    section {
+        padding: 40px 15px;
+    }
+    .navbar {
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        padding: 10px 4px;
+    }
+
+    .navbar a {
+        font-size: 10px;
+        padding: 8px 4px;
+        white-space: nowrap;
+    }
+
+    h1 {
+        font-size: 25px;
+        overflow-wrap: anywhere;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .projects-container,
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .project-card,
+    .skill-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
+
+
