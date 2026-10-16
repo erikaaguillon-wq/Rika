@@ -201,7 +201,6 @@ body {
 }
 
 .project-card p {
-    .project-card p 
     color: #fffefd;
     font-size: 16px;
     line-height: 1.6;
@@ -235,7 +234,6 @@ body {
 }
 
 .project-button {
-   .project-button
     display: block;
     width: 150px;
     margin: 15px auto 5px;
